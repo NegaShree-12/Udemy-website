@@ -22,10 +22,12 @@ const SwiperSlides = () => {
       >
         <SwiperSlide>
           <div className="slide">
-            <img src={Singlewomen} alt="Slide 1" className="slide-image" />
+            <div className="image-wrapper">
+              <img src={Singlewomen} alt="Slide 1" className="slide-image" />
+            </div>
             <div className="text-box">
-              <h2>Learning that gets you</h2>
-              <p>
+              <h2 className="animated-text">Learning that gets you</h2>
+              <p className="animated-text">
                 Skills for your present (and your future). Get started with us.
               </p>
             </div>
@@ -34,10 +36,14 @@ const SwiperSlides = () => {
 
         <SwiperSlide>
           <div className="slide">
-            <img src={Bothworking} alt="Slide 2" className="slide-image" />
-            <div className="text-box1">
-              <h2>Another inspiring message</h2>
-              <p>Empower yourself with knowledge and skills for success.</p>
+            <div className="image-wrapper">
+              <img src={Bothworking} alt="Slide 2" className="slide-image" />
+            </div>
+            <div className="text-box">
+              <h2 className="animated-text">Another inspiring message</h2>
+              <p className="animated-text">
+                Empower yourself with knowledge and skills for success.
+              </p>
             </div>
           </div>
         </SwiperSlide>

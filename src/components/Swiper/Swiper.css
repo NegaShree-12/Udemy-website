@@ -1,80 +1,168 @@
+/* Container */
 .swiper-container {
   width: 100%;
-  max-height: 60vh;
-  height: 100%;
+  max-height: 70vh;
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* Slide */
 .slide {
   position: relative;
   width: 100%;
   height: 100%;
 }
 
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .slide-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 5s ease;
+}
+
+.slide:hover .slide-image {
+  transform: scale(1.15);
 }
 
 .text-box {
   position: absolute;
-  top: 20%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  text-align: center;
-}
-.text-box1 {
-  position: absolute;
   top: 30%;
-  left: 25%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  max-height: 20vh;
-  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  color: #fff;
+  border-radius: 15px;
+  padding: 30px;
   text-align: center;
+
+  z-index: 10;
 }
 
 .text-box h2 {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-.text-box1 h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .text-box p {
-  font-size: 16px;
-  color: #666;
+  font-size: 18px;
+  line-height: 1.6;
 }
-.text-box1 p {
-  font-size: 16px;
-  color: #666;
+
+.animated-text {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease forwards;
 }
+
+.text-box h2 {
+  animation-delay: 0.2s;
+}
+
+.text-box p {
+  animation-delay: 0.4s;
+}
+
 .swiper-button-next,
 .swiper-button-prev {
-  color: #fff;
-  z-index: 10;
-  top: 30%;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 40%;
   transform: translateY(-50%);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
+
+.swiper-button-prev::after {
+  content: "\2190";
+}
+
+.swiper-button-next::after {
+  content: "\2192";
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #007bff;
+  background: #f7f7f7;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    max-height: 50vh;
+  }
+
+  .text-box {
+    padding: 20px;
+  }
+
+  .text-box h2 {
+    font-size: 24px;
+  }
+
+  .text-box p {
+    font-size: 16px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+  }
 }
