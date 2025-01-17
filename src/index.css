@@ -14,3 +14,11 @@ body {
   height: 100%;
   font-family: Arial, sans-serif; /* Adjust font-family as needed */
 }
+
+.center-container {
+  display: flex;
+  justify-content: center; /* Centers Flashsale horizontally */
+  margin: 0 auto; /* Ensures equal gap on the left and right */
+  padding: 20px; /* Optional padding */
+  max-width: 1200px; /* Optional: Limit the width */
+}
