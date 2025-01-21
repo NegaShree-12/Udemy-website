@@ -1,0 +1,128 @@
+.review-section {
+    text-align: justify;
+    padding: 50px 20px;
+    background-color: #f9fafb;
+  }
+  
+  .review-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1f2937;
+    text-align: justify;
+    margin-left: 230px;
+  }
+  
+  .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  .review-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    width: 230px;
+    height: 220px;
+    padding: 20px;
+    /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    border: 1px solid rgb(160, 153, 153);
+
+  }
+  
+  .review-quote {
+    font-size: 40px;
+    color: #070707;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    
+  }
+  
+  .review-feedback {
+    font-size: 12px;
+    margin: 20px 0 20px;
+    color: #212223;
+    /* text-align: justify; */
+    margin-bottom: 18px;
+    width: 180px;
+    height: 80px;
+  }
+  
+  .review-author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .review-avatar {
+    width: 30px;
+    height: 30px;
+    background: #1f2937;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    flex-shrink: 0; /* Prevents shrinking of the avatar */
+  }
+  
+  .review-name {
+    font-size: 10px;
+    font-weight: bold;
+    color: #384251;
+  }
+  
+  .review-course-link {
+    font-size: 10px;
+    color: #6d28d9;
+    text-decoration: none;
+    font-weight: bold;
+     text-align: right;
+     align-items: self-start;
+   
+
+  }
+  
+  .review-course-link:hover {
+    text-decoration: underline;
+  }
+  
+  .review-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 85px;
+    
+  }
+  
+  .review-nav-button {
+    background: #eef5f5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 25px;
+    color: #090909;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .review-nav-button:hover {
+    background-color: #e5e7eb;
+  }
+  
