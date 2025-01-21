@@ -1,5 +1,7 @@
 import React from "react";
 import "./Review.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight, faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
 
 const reviews = [
   {
@@ -55,7 +57,9 @@ const Review = () => {
           </div>
         ))}
         <div className="review-navigation">
-          <button className="review-nav-button">{">"}</button>
+          <button className="review-nav-button">
+          <FontAwesomeIcon icon={faChevronRight} />
+          </button>
         </div>
       </div>
     </div>
