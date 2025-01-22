@@ -20,11 +20,11 @@ createRoot(document.getElementById("root")).render(
     <div className="center-container">
       <Swiperslide />
     </div>
-    <Trends/>
+   
     <Goals/>
     <Subscription/>
     <Review />
-    
+    <Trends/>
 
   </StrictMode>
 );
