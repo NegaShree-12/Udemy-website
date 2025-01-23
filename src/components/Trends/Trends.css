@@ -1,0 +1,53 @@
+.trends-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .trends-content {
+    max-width: 50%;
+    margin-left: 60px;
+  }
+  
+  .trends-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .trends-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .trends-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(55, 28, 194);
+    
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .trends-button:hover {
+    background-color: #d7d2e9;
+  }
+  
+  .trends-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 70px;
+    
+  }
+
+  .text p{
+    width: 200px;
+    height: 100px;
+  }
+  
