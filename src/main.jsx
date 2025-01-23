@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import App from "./App.jsx";
 import Goals from "./components/Goals/Goals.jsx";
 import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
 import Swiperslide from "./components/Swiper/Swiper.jsx";
@@ -18,12 +17,10 @@ createRoot(document.getElementById("root")).render(
       <Swiperslide />
       <CourseTabs />
     </div>
-   
-    <Goals/>
-    <Subscription/>
-    <Review />
-    <Trends/>
-
     <CourseList />
+    <Goals />
+    <Subscription />
+    <Review />
+    <Trends />
   </StrictMode>
 );
