@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "../Card/Card.jsx";
 import "./Subscription.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faUsers } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Subscription = () => {
@@ -17,8 +20,10 @@ const Subscription = () => {
         "Goal-focused recommendations",
         "AI-powered coding exercises",
       ],
-      buttonText: "Start subscription →",
+      buttonText: "Start subscription  ",
+      icon:faUser,
       color: "#6d28d9",
+    
     },
     {
       title: "Team Plan",
@@ -33,14 +38,16 @@ const Subscription = () => {
         "AI-powered coding exercises",
         "Analytics and adoption reports",
       ],
-      buttonText: "Start subscription →",
+      buttonText: "Start subscription  ",
+      icon:faUsers,
       color: "#9333ea",
     },
     {
       title: "Enterprise Plan",
       subtitle: "For your whole organization",
       people:"More than 20 people",
-      
+      price: "Contact sales for pricing",
+      pricedescription:"Billed annually. Cancel anytime.",
       details: [
         "Access to 27,000+ top courses",
         "Certification prep",
@@ -50,10 +57,10 @@ const Subscription = () => {
         "Dedicated customer success team",
         "International course collection featuring 15 languages",
         "Customizable content",
-        "Hands-on tech training with add-on",
-        "Strategic implementation services with add-on",
+       
       ],
-      buttonText: "Request a demo →",
+      buttonText: "Request a demo  ",
+      icon:faUsers,
       color: "#7c3aed",
       isContact: true,
     },

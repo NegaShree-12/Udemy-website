@@ -11,19 +11,23 @@ import Review from "./components/Review/Review.jsx";
 import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
 
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <TopNavbar />
     <div className="center-container">
       <Swiperslide />
+      
       <CourseTabs />
-    </div>
-   
-    <Goals/>
+      <CourseList />
+      <Goals/>
     <Subscription/>
     <Review />
     <Trends/>
+    </div>
+   
+  
 
-    <CourseList />
+    
   </StrictMode>
 );
