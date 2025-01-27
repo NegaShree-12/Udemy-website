@@ -3,6 +3,8 @@ import "./Review.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
+
+
 const reviews = [
   {
     name: "Diksha S",
