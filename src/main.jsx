@@ -9,6 +9,7 @@ import Review from "./components/Review/Review.jsx";
 import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";
+import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -24,6 +25,7 @@ createRoot(document.getElementById("root")).render(
       <TopNavbar />
     </div>
     <CourseSlider />
+    <CommunityStats />
     <div className="center-container">
       <CourseTabs />
       <CourseList />

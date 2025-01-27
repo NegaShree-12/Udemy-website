@@ -13,9 +13,9 @@ const TopNavbar = () => {
       borderRadius: "10px",
     },
     brand: {
-      fontFamily: "'Playfair Display', serif", 
+      fontFamily: "'Playfair Display', serif",
       fontSize: "1.5rem",
-      color: "#313F30", 
+      color: "#313F30",
       fontWeight: "bold",
     },
     menu: {
@@ -53,7 +53,7 @@ const TopNavbar = () => {
     <nav style={styles.container}>
       <div style={styles.brand}>Udemy</div>
       <ul style={styles.menu}>
-        <li style={styles.menuItem}>Treatments</li>
+        <li style={styles.menuItem}>Courses</li>
         <li style={styles.menuItem}>About</li>
         <li style={styles.menuItem}>Contact</li>
         <li style={styles.menuItem}>Login</li>
