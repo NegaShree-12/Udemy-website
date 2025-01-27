@@ -1,55 +1,65 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import Singlewomen from "../../assets/singlewomen.avif";
-import Bothworking from "../../assets/bothworking.jpg";
-import "swiper/css";
-import "swiper/css/navigation";
+import React, { useState } from "react";
+import image1 from "../../assets/image1.webp";
+import image2 from "../../assets/image2.avif";
+import image3 from "../../assets/image3.jpg";
+import image4 from "../../assets/image4.jpg";
 import "./Swiper.css";
 
-const SwiperSlides = () => {
-  return (
-    <div className="swiper-container">
-      <Swiper
-        modules={[Navigation, Autoplay]}
-        navigation
-        spaceBetween={0}
-        slidesPerView={1}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-      >
-        <SwiperSlide>
-          <div className="slide">
-            <div className="image-wrapper">
-              <img src={Singlewomen} alt="Slide 1" className="slide-image" />
-            </div>
-            <div className="text-box">
-              <h2 className="animated-text">Learning that gets you</h2>
-              <p className="animated-text">
-                Skills for your present (and your future). Get started with us.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
+const CourseSlider = () => {
+  const [mainImageIndex, setMainImageIndex] = useState(0);
 
-        <SwiperSlide>
-          <div className="slide">
-            <div className="image-wrapper">
-              <img src={Bothworking} alt="Slide 2" className="slide-image" />
-            </div>
-            <div className="text-box">
-              <h2 className="animated-text">Another inspiring message</h2>
-              <p className="animated-text">
-                Empower yourself with knowledge and skills for success.
-              </p>
-            </div>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+  const courses = [
+    {
+      src: image1,
+      title: "Master Web Development",
+      description:
+        "Learn HTML, CSS, JavaScript, and React to build modern websites.",
+    },
+    {
+      src: image2,
+      title: "Data Science Bootcamp",
+      description:
+        "Become a data scientist with Python, SQL, and machine learning.",
+    },
+    {
+      src: image3,
+      title: "Graphic Design for Beginners",
+      description: "Master Photoshop, Illustrator, and design fundamentals.",
+    },
+    {
+      src: image4,
+      title: "Digital Marketing Mastery",
+      description:
+        "Learn SEO, social media marketing, and Google Ads strategies.",
+    },
+  ];
+
+  return (
+    <div className="image-wrapper">
+      <img
+        src={courses[mainImageIndex].src}
+        alt={courses[mainImageIndex].title}
+        className="main-image"
+      />
+      <div className="content-overlay">
+        <h2 className="title">{courses[mainImageIndex].title}</h2>
+        <p className="description">{courses[mainImageIndex].description}</p>
+      </div>
+      <div className="thumbnails">
+        {courses.map((course, index) => (
+          <img
+            key={index}
+            src={course.src}
+            alt={course.title}
+            className={`thumbnail ${
+              mainImageIndex === index ? "active-thumbnail" : ""
+            }`}
+            onClick={() => setMainImageIndex(index)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default SwiperSlides;
+export default CourseSlider;
