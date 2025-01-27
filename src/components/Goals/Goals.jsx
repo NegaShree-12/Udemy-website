@@ -38,7 +38,7 @@ function Goals() {
       </div>
 
       <div className="Goals-image">
-        <img src="udemy-containerization.png" alt="score board" />
+        <img src="learning.avif" alt="score board" />
       </div>
       </div>
     </section>

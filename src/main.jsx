@@ -10,21 +10,15 @@ import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
+import Journey from "./components/Journey/Journey.jsx";
+import Swiperslide from "./components/Swiper/Swiper.jsx";
+
+
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TopNavbar />
-    <div className="center-container">
-      <Swiperslide />
-      
-      <CourseTabs />
-      <CourseList />
-      <Goals/>
-    <Subscription/>
-    <Review />
-    <Trends/>
-    </div>
+    
    
   
 
@@ -34,8 +28,8 @@ createRoot(document.getElementById("root")).render(
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        height: "100px", // Full viewport height for proper centering
-        background: "linear-gradient(to bottom, #3b6035 50%, #FFFFFF 50%)", // Half green, half white
+        height: "100px",
+        background: "linear-gradient(to bottom, #3b6035 50%, #FFFFFF 50%)", 
       }}
     >
       <TopNavbar />
@@ -48,7 +42,9 @@ createRoot(document.getElementById("root")).render(
     </div>
     <div className="center-container"></div>
     <Goals />
+    <Journey/>
     <Subscription />
+
     <Review />
     <Trends />
   </StrictMode>

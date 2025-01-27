@@ -5,7 +5,9 @@
   position: relative;
  
 }
-
+*{
+  overflow-x: hidden ;
+}
 .review-section h2 {
   font-size: 28px;
   font-weight: bold;
@@ -17,18 +19,10 @@
   display: flex;
   overflow: hidden;
   gap: 30px;
-  justify-content: flex-start;
+  justify-content: center;
   position: relative;
-
-
   height: 400px;
- 
  padding-top: 50px;
- padding-left:20px ;
- padding-right:20px ;
-margin: 20px;
-
- 
 }
 
 .review-card {
@@ -54,7 +48,7 @@ margin: 20px;
 
 .review-quote {
   font-size: 50px;
-  color: #6d28d9;
+  color: rgba(30, 109, 18);
   font-weight: bold;
   position: absolute;
   top: 10px;
@@ -95,7 +89,7 @@ margin: 20px;
 
 .review-course-link {
   font-size: 12px;
-  color: #6d28d9;
+  color:rgba(30, 109, 18);
   text-decoration: none;
   font-weight: bold;
 }
@@ -128,6 +122,7 @@ margin: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
   pointer-events: auto;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+ 
 }
 
 .review-nav-button:hover {
