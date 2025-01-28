@@ -3,6 +3,8 @@ import "./Review.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 
+
+
 const reviews = [
   {
     name: "Diksha S",
@@ -91,10 +93,10 @@ const Review = () => {
           ))}
       </div>
       <div className="review-navigation">
-        <button className="review-nav-button"  id="review-nav-lbutton" onClick={prevReview}>
+        <button className="review-nav-button"   onClick={prevReview}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </button>
-        <button className="review-nav-button"  id="review-nav-rbutton" onClick={nextReview}>
+        <button className="review-nav-button"  onClick={nextReview}>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>
       </div>

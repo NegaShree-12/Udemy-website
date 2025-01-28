@@ -1,0 +1,71 @@
+/* AppFooter.css */
+*{
+  overflow-x: hidden;
+}
+.app-footer {
+  background-color: #0f0f10;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+ 
+ 
+}
+
+.footer-top p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 190px;
+}
+
+.companies-logo img {
+  margin: 0 10px;
+  height: 30px;
+  margin: right;
+  background-color: #181818;
+  color: #181818;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  margin-top: 10%;
+
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.line{
+  
+  justify-content: center;
+  padding: 1%;
+
+}

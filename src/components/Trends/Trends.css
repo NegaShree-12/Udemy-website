@@ -26,9 +26,9 @@
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: bold;
-    color: rgb(55, 28, 194);
+    color: rgba(30, 109, 18);
     
-    border: 1px solid blue;
+    border: 1px solid rgba(30, 109, 18);
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;

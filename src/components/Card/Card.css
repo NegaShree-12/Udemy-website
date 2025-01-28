@@ -45,7 +45,7 @@
   }
   
   .card button {
-    background-color: #5b21b6;
+    background-color:rgba(30, 109, 18);
     color: white;
     padding: 10px 15px;
     border: none;
@@ -58,7 +58,7 @@
   }
   
   .card button:hover {
-    background-color: #4c1d95;
+    background-color:rgb(34, 133, 19);
   }
   
   .card ul {
