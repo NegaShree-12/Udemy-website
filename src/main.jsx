@@ -2,7 +2,6 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import Navbar from "./pages/Navbar.jsx";
 
 
 import Goals from "./components/Goals/Goals.jsx";
@@ -13,6 +12,7 @@ import Review from "./components/Review/Review.jsx";
 import TrendingNow from "./components/Trendsnow/TrendingNow.jsx";
 import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
+import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 
 import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
@@ -21,20 +21,8 @@ import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TopNavbar />
-    <div className="center-container">
-      <CourseTabs />
-      <CourseList />
-    </div>
 
-    <Goals />
-    <Subscription />
-    <Review />
-    <Trends />
-    <TrendingNow />
-    <Story />
-    <AppFooter />
-
+    
     <div
       style={{
         display: "flex",
@@ -49,6 +37,25 @@ createRoot(document.getElementById("root")).render(
 
     <CourseSlider />
     <CommunityStats />
+    <div className="center-container">
+      <CourseTabs />
+      <CourseList />
+    </div>
+
+    <Goals />
+    <Subscription />
+    <Review />
+    <Trends />
+    <TrendingNow />
+    <Story />
+   
+
+   
+    
+    
+    <AppFooter />
+    <AppFooter1/>
+   
   </StrictMode>
 );
 

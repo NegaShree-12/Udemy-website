@@ -1,72 +1,71 @@
-.footer {
-    background-color: #121212;
-    color: #fff;
-    padding: 40px 20px;
-    font-family: Arial, sans-serif;
-  }
+/* AppFooter.css */
+*{
+  overflow-x: hidden;
+}
+.app-footer {
+  background-color: #0f0f10;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-top {
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+ 
+ 
+}
+
+.footer-top p {
+  font-size: 18px;
+  font-weight: 700;
+  text-align: right;
+  margin-right: 190px;
+}
+
+.companies-logo img {
+  margin: 0 10px;
+  height: 30px;
+  margin: right;
+  background-color: #181818;
+  color: #181818;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 80px;
+  margin-top: 10%;
+
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-column li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.line{
   
-  .footer-top {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .footer-top h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
-  .footer-top .logos {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-  }
-  
-  .footer-top .logos span {
-    font-size: 16px;
-  }
-  
-  .footer-links {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
-    gap: 20px;
-  }
-  
-  .footer-column {
-    text-align: left;
-  }
-  
-  .footer-column h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column ul li {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  .footer-column ul li:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #0d0d0d; /* Slightly darker for separation */
-    font-size: 14px;
-    color: #aaa;
-    border-top: 1px solid #333;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-  }
-  
+  justify-content: center;
+  padding: 1%;
+
+}

@@ -1,20 +1,29 @@
+// AppFooter.jsx
+
 import React from "react";
 import "./AppFooter.css";
 
 const AppFooter = () => {
   return (
-    <footer className="footer">
+    <footer className="app-footer">
       <div className="footer-top">
-        <h2>Top companies choose Udemy Business to build in-demand career skills.</h2>
-        <div className="logos">
-          <span>Nasdaq</span>
-          <span>Volkswagen</span>
-          <span>Box</span>
-          <span>NetApp</span>
-          <span>Eventbrite</span>
+        <p>
+          Top companies choose <strong>Udemy Business</strong> to build in-demand
+          career skills.
+        </p>
+        <div className="companies-logo">
+          <img src="/nasdaq-logo.png" alt="Nasdaq" />
+          <img src="/volkswagen-logo.png" alt="Volkswagen" />
+          <img src="/box-logo.png" alt="Box" />
+          <img src="/netapp-logo.png" alt="NetApp" />
+          <img src="/eventbrite-logo.png" alt="Eventbrite" />
         </div>
       </div>
-      <div className="footer-links">
+
+      <hr />
+
+      
+      <div className="footer-content">
         <div className="footer-column">
           <h3>Certifications by Issuer</h3>
           <ul>
@@ -23,17 +32,6 @@ const AppFooter = () => {
             <li>Microsoft Certifications</li>
             <li>Cisco Certifications</li>
             <li>Tableau Certifications</li>
-            <li>See all Certifications</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Certifications by Skill</h3>
-          <ul>
-            <li>Cybersecurity Certification</li>
-            <li>Project Management Certification</li>
-            <li>Cloud Certification</li>
-            <li>Data Analytics Certification</li>
-            <li>HR Management Certification</li>
             <li>See all Certifications</li>
           </ul>
         </div>
@@ -48,16 +46,6 @@ const AppFooter = () => {
           </ul>
         </div>
         <div className="footer-column">
-          <h3>Data Science</h3>
-          <ul>
-            <li>Data Science</li>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>ChatGPT</li>
-            <li>Deep Learning</li>
-          </ul>
-        </div>
-        <div className="footer-column">
           <h3>IT Certifications</h3>
           <ul>
             <li>Amazon AWS</li>
@@ -65,16 +53,6 @@ const AppFooter = () => {
             <li>AZ-900: Microsoft Azure Fundamentals</li>
             <li>AWS Certified Solutions Architect - Associate</li>
             <li>Kubernetes</li>
-          </ul>
-        </div>
-        <div className="footer-column">
-          <h3>Communication</h3>
-          <ul>
-            <li>Communication Skills</li>
-            <li>Presentation Skills</li>
-            <li>Public Speaking</li>
-            <li>Writing</li>
-            <li>PowerPoint</li>
           </ul>
         </div>
         <div className="footer-column">
@@ -88,6 +66,37 @@ const AppFooter = () => {
           </ul>
         </div>
         <div className="footer-column">
+          <h3>Certifications by Skill</h3>
+          <ul>
+            <li>Cybersecurity Certification</li>
+            <li>Project Management Certification</li>
+            <li>Cloud Certification</li>
+            <li>Data Analytics Certification</li>
+            <li>HR Management Certification</li>
+            <li>See all Certifications</li>
+          </ul>
+        </div>
+        <div className="footer-column">
+          <h3>Data Science</h3>
+          <ul>
+            <li>Data Science</li>
+            <li>Python</li>
+            <li>Machine Learning</li>
+            <li>ChatGPT</li>
+            <li>Deep Learning</li>
+          </ul>
+        </div>
+        <div className="footer-column">
+          <h3>Communication</h3>
+          <ul>
+            <li>Communication Skills</li>
+            <li>Presentation Skills</li>
+            <li>Public Speaking</li>
+            <li>Writing</li>
+            <li>PowerPoint</li>
+          </ul>
+        </div>
+        <div className="footer-column">
           <h3>Business Analytics & Intelligence</h3>
           <ul>
             <li>Microsoft Excel</li>
@@ -96,13 +105,24 @@ const AppFooter = () => {
             <li>Data Analysis</li>
             <li>Business Analysis</li>
           </ul>
+          <div class="center-line"></div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-      </div>
-    </footer>
+    
+    <div className="line">
+    <hr>
+   
+    </hr>
+    </div>
+   </footer>
+
+   
+
+
   );
+
+  
+
 };
 
 export default AppFooter;
