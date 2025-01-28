@@ -1,5 +1,6 @@
 import React from "react";
 import "./TrendingNow.css";
+import { FaArrowRight } from "react-icons/fa";
 
 const TrendingNow = () => {
   const sections = [
@@ -37,10 +38,10 @@ const TrendingNow = () => {
         <div className="trending-now-highlight">
           <h2 className="highlight-title">ChatGPT is a top skill</h2>
           <p className="highlight-link">
-            See ChatGPT courses <span>&rarr;</span>
+            See ChatGPT courses <span><FaArrowRight /></span>
           </p>
           <p className="highlight-learners">4,055,521 learners</p>
-          <button className="trending-now-button">Show all trending skills &rarr;</button>
+          <button className="trending-now-button">Show all trending skills <FaArrowRight /></button>
         </div>
         {/* Right Section */}
         <div className="trending-now-sections">
