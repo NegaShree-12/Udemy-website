@@ -92,6 +92,7 @@
   color:rgba(30, 109, 18);
   text-decoration: none;
   font-weight: bold;
+  text-align: justify;
 }
 
 .review-course-link:hover {

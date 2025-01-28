@@ -16,26 +16,13 @@ import CourseList from "./components/Courselist/Courselist.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 import Journey from "./components/Journey/Journey.jsx";
-// import Swiperslide from "./components/Swiper/Swiper.jsx";
+
 
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <TopNavbar />
-    <div className="center-container">
-      <CourseTabs />
-      <CourseList />
-    </div>
-
-    <Goals />
-    <Subscription />
-    <Review />
-    <Trends />
-    <TrendingNow />
-    <Story />
-    <AppFooter />
-
+   
     <div
       style={{
         display: "flex",
@@ -61,7 +48,11 @@ createRoot(document.getElementById("root")).render(
 
     <Review />
     <Trends />
+    <TrendingNow />
+    <Story />
+    <AppFooter />
   </StrictMode>
+ 
 );
 
 

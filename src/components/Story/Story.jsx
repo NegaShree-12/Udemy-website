@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import "./Story.css";
+import { FaChevronRight,FaChevronLeft, FaArrowRight } from "react-icons/fa";
 
 const slides = [
   {
     id: 1,
-    logo: "/path-to-logo1.png",
+    logo: "capital.jpeg",
     title: "Capital One Accelerates Transformational Learning through Udemy Business",
     stats: [
       { value: "95%", description: "of learners rated Udemy as 'very helpful' to their success" },
@@ -14,7 +15,7 @@ const slides = [
   },
   {
     id: 2,
-    logo: "/path-to-logo2.png",
+    logo: "event.png",
     title: "Eventbrite Navigates Change Through Skill-Building and Leadership Development",
     stats: [
       { value: "4,800+", description: "increase in employee enrollments for professional development courses" },
@@ -24,7 +25,7 @@ const slides = [
   },
   {
     id: 3,
-    logo: "/path-to-logo3.png",
+    logo: "toyato1.jpeg",
     title: "Another Transformational Story Here",
     stats: [
       { value: "90%", description: "of learners gained new skills" },
@@ -63,7 +64,9 @@ const Story = () => {
                 </div>
               ))}
             </div>
-            <button className="read-more">Read full story</button>
+            <button className="read-more">
+      Read full story <FaArrowRight />
+    </button>
           </div>
           <div className="slide-image">
             <img src={slide.image} alt="Story visual" />
@@ -71,7 +74,7 @@ const Story = () => {
         </div>
       ))}
       <div className="navigation">
-        <button className="nav-btn" onClick={handlePrev}>&lt;</button>
+        <button className="nav-btn" onClick={handlePrev}><FaChevronLeft /></button>
         <div className="dots">
           {slides.map((_, idx) => (
             <span
@@ -81,7 +84,7 @@ const Story = () => {
             />
           ))}
         </div>
-        <button className="nav-btn" onClick={handleNext}>&gt;</button>
+        <button className="nav-btn" onClick={handleNext}> <FaChevronRight /></button>
       </div>
     </div>
   );

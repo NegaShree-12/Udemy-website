@@ -7,7 +7,7 @@ const Journey = () => {
     {
       icon: <FaCertificate />,
       title: "28 years of experienced",
-      description: "Learnathon is backed by 28 years of experienced...",
+      description: "Udemy is backed by 28 years of experienced...",
     },
     {
       icon: <FaClipboardList />,
@@ -22,7 +22,7 @@ const Journey = () => {
     {
       icon: <FaComments />,
       title: "Good communication",
-      description: "At Learnathon we believe that good communication helps...",
+      description: "At Udemy  we believe that good communication helps...",
     },
   ];
 

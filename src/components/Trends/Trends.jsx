@@ -1,5 +1,6 @@
 import React from 'react';
 import './Trends.css';
+import { FaArrowRight } from "react-icons/fa";
 
 const Trends = () => {
   return (
@@ -15,7 +16,7 @@ const Trends = () => {
          </div>
           
         
-        <button className="trends-button">Get the report →</button>
+        <button className="trends-button">Get the report <FaArrowRight /></button>
       </div>
       <div className="trends-image">
         <img

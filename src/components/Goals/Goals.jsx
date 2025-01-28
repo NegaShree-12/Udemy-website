@@ -1,5 +1,6 @@
 import React from "react";
 import "./Goals.css";
+import { FaArrowRight } from "react-icons/fa";
 
 function Goals() {
   return (
@@ -15,7 +16,7 @@ function Goals() {
       <div className="goal">
         <h2>Certification prep</h2>
         <p>Prep for industry-recognized certifications by solving real-world challenges and earning badges along the way.</p>
-        <a href="#">Explore courses &rarr;</a>
+        <a href="#">Explore courses <FaArrowRight /></a>
       </div>
       <div className="goal">
         <h2>
@@ -24,7 +25,7 @@ function Goals() {
         <p>
           Fast-track goals with advanced insights plus a dedicated customer success team to help drive effective learning.
         </p>
-        <a href="#">Find out more &rarr;</a>
+        <a href="#">Find out more <FaArrowRight /></a>
       </div>
       <div className="goal">
         <h2>
@@ -33,7 +34,7 @@ function Goals() {
         <p>
           Create tailored learning paths for team and organization goals and even host your own content and resources.
         </p>
-        <a href="#">Find out more &rarr;</a>
+        <a href="#">Find out more <FaArrowRight /></a>
       </div>
       </div>
 
