@@ -16,16 +16,17 @@ const CourseTabs = () => {
     <div
       style={{
         textAlign: "left",
-        marginTop: "50px",
-        marginRight: "280px",
+        // marginTop: "50px",
+        // marginRight: "280px",
+        marginLeft: "40px",
         display: "flex",
         flexDirection: "column",
         gap: "10px",
       }}
     >
-      <h1 style={{ fontFamily: "Kanit, sans-serif" }}>
+      <h3 style={{ fontFamily: "Poppins, sans-serif", fontSize: "34px" }}>
         All the skills you need in one place
-      </h1>
+      </h3>
 
       <p>
         From critical skills to technical topics, Udemy supports your

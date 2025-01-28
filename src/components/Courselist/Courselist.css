@@ -5,11 +5,15 @@ body {
 }
 
 .app {
-  background-color: #f4f4f4;
+  background-color: black;
   display: flex;
   flex-direction: column;
   gap: 30px;
   position: relative;
+  margin-left: 40px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .header {
