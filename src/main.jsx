@@ -8,6 +8,10 @@ import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
 import Trends from "./components/Trends/Trends.jsx";
 import Subscription from "./components/Subscription/Subscription.jsx";
 import Review from "./components/Review/Review.jsx";
+import CourseSlider from "./components/Swiper/Swiper.jsx";
+import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
+import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
+import Journey from "./components/Journey/Journey.jsx";
 import TrendingNow from "./components/Trendsnow/TrendingNow.jsx";
 import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
@@ -27,6 +31,9 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
    
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
     <div
       style={{
         display: "flex",
@@ -41,13 +48,10 @@ createRoot(document.getElementById("root")).render(
 
     <CourseSlider />
     <CommunityStats />
-    <div className="center-container">
-      <CourseTabs />
-      <CourseList />
-    </div>
+    <TrendingOnEdX />
     <div className="center-container"></div>
     <Goals />
-    <Journey/>
+    <Journey />
     <Subscription />
    <About/>
     <Review />
@@ -64,7 +68,4 @@ createRoot(document.getElementById("root")).render(
       </Routes>
     </Router>
   </StrictMode>
- 
 );
-
-
