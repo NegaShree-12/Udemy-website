@@ -55,13 +55,18 @@
   background-color: #fff;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px rgba(0, 0, 0, 0.2);
   margin-top: 1rem;
+  height: 230px;
+  
 }
+
+
 
 .journey-step-title {
   font-size: 1.2rem;
   margin: 1rem 0;
+  height: 45px;
 }
 
 .journey-step-description {
@@ -89,4 +94,7 @@
   border-top: 2px dashed rgba(30, 109, 18);
   z-index: 1;
   transform: translateY(-50%);
+}
+#content{
+  height: 150px;
 }

@@ -36,8 +36,10 @@ const Journey = () => {
             <div className="journey-step" key={index}>
               <div className="journey-icon">{step.icon}</div>
               <div className="journey-box">
+                <div id="content">
                 <h4 className="journey-step-title">{step.title}</h4>
                 <p className="journey-step-description">{step.description}</p>
+                </div>
                 <a href="#" className="journey-step-link">
                   View more
                 </a>

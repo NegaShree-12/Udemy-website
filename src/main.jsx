@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import "./index.css";
 
 import Goals from "./components/Goals/Goals.jsx";
@@ -12,18 +13,19 @@ import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 import App from "./App.jsx";
-
 import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 import Journey from "./components/Journey/Journey.jsx";
+import About from "./components/About/About.jsx";
 
 
 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
+    <Router>
    
     <div
       style={{
@@ -47,19 +49,20 @@ createRoot(document.getElementById("root")).render(
     <Goals />
     <Journey/>
     <Subscription />
-
+   <About/>
     <Review />
     <Trends />
     <TrendingNow />
     <Story />
-   
-
-   
-    
-    
     <AppFooter />
     <AppFooter1/>
-   
+
+
+    <Routes>
+        <Route path="/about" element={<About />} />
+        
+      </Routes>
+    </Router>
   </StrictMode>
  
 );

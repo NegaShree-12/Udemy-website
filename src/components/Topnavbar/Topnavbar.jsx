@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const TopNavbar = () => {
   const styles = {
@@ -54,7 +55,7 @@ const TopNavbar = () => {
       <div style={styles.brand}>Udemy</div>
       <ul style={styles.menu}>
         <li style={styles.menuItem}>Courses</li>
-        <li style={styles.menuItem}>About</li>
+        <li style={styles.menuItem}><Link to="/about">About</Link></li>
         <li style={styles.menuItem}>Contact</li>
         <li style={styles.menuItem}>Login</li>
         <button style={styles.button}>
