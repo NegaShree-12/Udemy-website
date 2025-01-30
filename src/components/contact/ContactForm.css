@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* height: 100%;  */
+  background: linear-gradient(to right, #118c4f, #42a341, #b8e2a3);
+  padding: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 100vh;
+  height: 100%;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.form-section {
+  flex: 1;
+  padding: 30px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #16a34a;
+}
+
+.description {
+  color: gray;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.textarea {
+  height: 100px;
+  resize: none;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.submit-button {
+  background: #3b82f6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.submit-button:hover {
+  background: #2563eb;
+}
+
+.map-section {
+  flex: 1;
+  height: 400px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+  .form-section,
+  .map-section {
+    width: 50%;
+  }
+  .map-section {
+    height: auto;
+  }
+}

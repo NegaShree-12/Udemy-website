@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopNavbar = () => {
+  const navigate = useNavigate();
+
   const styles = {
     container: {
       display: "flex",
@@ -53,13 +56,19 @@ const TopNavbar = () => {
     },
   };
 
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
+
   return (
     <nav style={styles.container}>
       <div style={styles.brand}>Udemy</div>
       <ul style={styles.menu}>
         <li style={styles.menuItem}>Courses</li>
         <li style={styles.menuItem}>About</li>
-        <li style={styles.menuItem}>Contact</li>
+        <li style={styles.menuItem} onClick={navigateToContact}>
+          Contact
+        </li>
         <li style={styles.menuItem}>Login</li>
         <button style={styles.button}>
           Get Started <span>→</span>

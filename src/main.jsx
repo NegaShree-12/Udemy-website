@@ -1,5 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import Goals from "./components/Goals/Goals.jsx";
@@ -15,9 +16,10 @@ import TrendingNow from "./components/Trendsnow/TrendingNow.jsx";
 import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
+import ContactForm from "./components/contact/contact.jsx"; // Uncomment this line
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
+const MainPage = () => (
+  <>
     <div
       style={{
         display: "flex",
@@ -45,5 +47,16 @@ createRoot(document.getElementById("root")).render(
 
     <AppFooter />
     <AppFooter1 />
+  </>
+);
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <Router>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/contact" element={<ContactForm />} />
+      </Routes>
+    </Router>
   </StrictMode>
 );
