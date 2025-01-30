@@ -16,7 +16,8 @@ import TrendingNow from "./components/Trendsnow/TrendingNow.jsx";
 import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
-import ContactForm from "./components/contact/contact.jsx"; // Uncomment this line
+import ContactForm from "./components/contact/contact.jsx";
+import About from "./components/About/About.jsx";
 
 const MainPage = () => (
   <>
@@ -39,12 +40,11 @@ const MainPage = () => (
     <Goals />
     <Journey />
     <Subscription />
-
+    <About />
     <Review />
     <Trends />
     <TrendingNow />
     <Story />
-
     <AppFooter />
     <AppFooter1 />
   </>
@@ -56,6 +56,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<ContactForm />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   </StrictMode>
