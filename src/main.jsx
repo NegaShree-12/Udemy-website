@@ -48,7 +48,7 @@ const MainPage = () => (
     
     <AppFooter />
     <AppFooter1 />
-    <Team/>
+    
   </>
 );
 
@@ -63,8 +63,10 @@ createRoot(document.getElementById("root")).render(
                    <TopNavbar />
                      <About />
                      <Aboutcontent />
+                     <Team/>
                      <AppFooter />
                      <AppFooter1 />
+                     
                    </>
                } />
 
