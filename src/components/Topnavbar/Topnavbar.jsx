@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+
 
 const TopNavbar = () => {
   const styles = {
@@ -52,6 +52,13 @@ const TopNavbar = () => {
       alignItems: "center",
       gap: "0.5rem",
     },
+    link: {
+      color: "#313F30",
+      textDecoration: "none",
+    },
+    linkHover: {
+      color: "#FF6F61",
+    },
   };
 
   return (
@@ -59,7 +66,11 @@ const TopNavbar = () => {
       <div style={styles.brand}>Udemy</div>
       <ul style={styles.menu}>
         <li style={styles.menuItem}>Courses</li>
-        <li style={styles.menuItem}><Link to="/about">About</Link></li>
+        <li  style={styles.menuItem} >
+       
+            About
+           
+        </li>
         <li style={styles.menuItem}>Contact</li>
         <li style={styles.menuItem}>Login</li>
         <button style={styles.button}>
