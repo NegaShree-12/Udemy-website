@@ -1,18 +1,22 @@
 import React from "react";
 import "./ContactForm.css";
+import TopNavbar from "../Topnavbar/Topnavbar";
 
 const ContactForm = () => {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="form-section">
-          <h2 className="heading">
-            Get in <span className="highlight">touch</span>
+    
+    <>
+      <TopNavbar />
+    <div className="contact-container">
+      <div className="contact-card">
+        <div className="contact-form-section">
+          <h2 className="contact-heading">
+            Get in <span className="contact-highlight">touch</span>
           </h2>
-          <p className="description">
+          <p className="contact-description">
             Fill out the form below, and we’ll get back to you soon.
           </p>
-          <form className="form">
+          <form className="contact-form">
             <input
               type="text"
               placeholder="Contact Name"
@@ -47,9 +51,9 @@ const ContactForm = () => {
           </form>
         </div>
 
-        <div className="map-section">
+        <div className="contact-map-section">
           <iframe
-            className="map"
+            className="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.5134688553!2d76.88483286798547!3d11.013957787970114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f971cb5%3A0x2fc1c81e183ed282!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738228586495!5m2!1sen!2sin"
             allowFullScreen=""
             loading="lazy"
@@ -58,6 +62,8 @@ const ContactForm = () => {
         </div>
       </div>
     </div>
+
+    </>
   );
 };
 

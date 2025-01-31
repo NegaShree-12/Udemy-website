@@ -60,18 +60,27 @@ const TopNavbar = () => {
     navigate("/contact");
   };
 
+  const navigateToHome = () => {
+    navigate("/");  
+  };
+ 
+  const navigateToAbout = () => {
+    navigate("/about");
+  }
+
   return (
     <nav style={styles.container}>
-      <div style={styles.brand}>Udemy</div>
+      <div style={styles.brand}onClick={navigateToHome}>Udemy</div>
       <ul style={styles.menu}>
-        <li style={styles.menuItem}>Courses</li>
-        <li style={styles.menuItem}>About</li>
+        
+        <li style={styles.menuItem} onClick={navigateToAbout}>About</li>
         <li style={styles.menuItem} onClick={navigateToContact}>
           Contact
         </li>
-        <li style={styles.menuItem}>Login</li>
+        <li style={styles.menuItem} >Courses</li>
+        <li style={styles.menuItem}>Learnings</li>
         <button style={styles.button}>
-          Get Started <span>→</span>
+        Login <span>→</span>
         </button>
       </ul>
     </nav>

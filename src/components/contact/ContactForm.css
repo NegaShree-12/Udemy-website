@@ -1,4 +1,4 @@
-.container {
+.contact-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +8,7 @@
   padding: 40px;
 }
 
-.card {
+.contact-card {
   display: flex;
   flex-direction: column;
   width: 90%;
@@ -22,27 +22,27 @@
   padding: 20px;
 }
 
-.form-section {
+.contact-form-section {
   flex: 1;
   padding: 30px;
 }
 
-.heading {
+.contact-heading {
   font-size: 24px;
   font-weight: bold;
 }
 
-.highlight {
+.contact-highlight {
   color: #16a34a;
 }
 
-.description {
+.contact-description {
   color: gray;
   font-size: 14px;
   margin-top: 5px;
 }
 
-.form {
+.contact-form {
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -86,26 +86,26 @@
   background: #2563eb;
 }
 
-.map-section {
+.contact-map-section {
   flex: 1;
   height: 400px;
 }
 
-.map {
+.contact-map {
   width: 100%;
   height: 100%;
   border: none;
 }
 
 @media (min-width: 768px) {
-  .card {
+  .contact-card {
     flex-direction: row;
   }
-  .form-section,
-  .map-section {
+  .contact-form-section,
+  .contact-map-section {
     width: 50%;
   }
-  .map-section {
+  .contact-map-section {
     height: auto;
   }
 }
