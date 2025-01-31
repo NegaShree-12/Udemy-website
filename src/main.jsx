@@ -12,7 +12,6 @@ import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 import App from "./App.jsx";
-
 import CourseTabs from "./components/Courses/course.jsx";
 import CourseList from "./components/Courselist/Courselist.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";
@@ -47,15 +46,11 @@ createRoot(document.getElementById("root")).render(
     <Goals />
     <Journey/>
     <Subscription />
-
     <Review />
     <Trends />
     <TrendingNow />
     <Story />
-   
 
-   
-    
     
     <AppFooter />
     <AppFooter1/>

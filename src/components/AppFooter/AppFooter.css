@@ -7,6 +7,7 @@
   color: #fff;
   padding: 20px 40px;
   font-family: Arial, sans-serif;
+  margin-bottom: 80px;
 }
 
 .footer-top {
@@ -23,7 +24,8 @@
   font-size: 18px;
   font-weight: 700;
   text-align: right;
-  margin-right: 190px;
+  margin-right: 210px;
+  
 }
 
 .companies-logo img {
