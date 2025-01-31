@@ -247,8 +247,6 @@ const TrendingOnEdX = () => {
             </Grid>
           ))}
         </Grid>
-
-        <div className="selected-category">Selected Category: {activeTab}</div>
       </div>
     </div>
   );

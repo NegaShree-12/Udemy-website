@@ -1,7 +1,13 @@
 import React from "react";
+<<<<<<< HEAD
 
+=======
+import { useNavigate } from "react-router-dom";
+>>>>>>> 40f9fc6601934bea33e685b73ca9006391fce7f6
 
 const TopNavbar = () => {
+  const navigate = useNavigate();
+
   const styles = {
     container: {
       display: "flex",
@@ -61,10 +67,23 @@ const TopNavbar = () => {
     },
   };
 
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
+
+  const navigateToHome = () => {
+    navigate("/");  
+  };
+ 
+  const navigateToAbout = () => {
+    navigate("/about");
+  }
+
   return (
     <nav style={styles.container}>
-      <div style={styles.brand}>Udemy</div>
+      <div style={styles.brand}onClick={navigateToHome}>Udemy</div>
       <ul style={styles.menu}>
+<<<<<<< HEAD
         <li style={styles.menuItem}>Courses</li>
         <li  style={styles.menuItem} >
        
@@ -73,8 +92,17 @@ const TopNavbar = () => {
         </li>
         <li style={styles.menuItem}>Contact</li>
         <li style={styles.menuItem}>Login</li>
+=======
+        
+        <li style={styles.menuItem} onClick={navigateToAbout}>About</li>
+        <li style={styles.menuItem} onClick={navigateToContact}>
+          Contact
+        </li>
+        <li style={styles.menuItem} >Courses</li>
+        <li style={styles.menuItem}>Learnings</li>
+>>>>>>> 40f9fc6601934bea33e685b73ca9006391fce7f6
         <button style={styles.button}>
-          Get Started <span>→</span>
+        Login <span>→</span>
         </button>
       </ul>
     </nav>

@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 
 import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
@@ -16,40 +16,48 @@ import TrendingNow from "./components/Trendsnow/TrendingNow.jsx";
 import Story from "./components/Story/Story.jsx";
 import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
+import ContactForm from "./components/contact/contact.jsx";
+import About from "./components/About/About.jsx";
+
+const MainPage = () => (
+  <>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100px",
+        background: "linear-gradient(to bottom, #3b6035 50%, #FFFFFF 50%)",
+      }}
+    >
+      <TopNavbar />
+    </div>
+
+    <CourseSlider />
+    <CommunityStats />
+    <TrendingOnEdX />
+    <div className="center-container"></div>
+    <Goals />
+    <Journey />
+    <Subscription />
+    <About />
+    <Review />
+    <Trends />
+    <TrendingNow />
+    <Story />
+    <AppFooter />
+    <AppFooter1 />
+  </>
+);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
-      {/* Top Navbar */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "100px",
-          background: "linear-gradient(to bottom, #3b6035 50%, #FFFFFF 50%)",
-        }}
-      >
-        <TopNavbar />
-      
-      </div>
-
-      <CourseSlider />
-      <CommunityStats />
-      <Goals />
-      <Journey />
-      <Subscription />
-      <Review />
-      <Trends />
-      <TrendingNow />
-      <Story />
-     
-    
-
-     
-
-      <AppFooter />
-      <AppFooter1 />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
     </Router>
   </StrictMode>
 );
