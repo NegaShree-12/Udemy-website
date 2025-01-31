@@ -5,12 +5,26 @@ import aboutImage from "../../assets/about-image.jpg";
 const About = () => {
   return (
     <>
-    
+   <div className="learner">
+  <img src="about-image.jpg" alt="learner" />
+  <div className="text-overlay">Inspiring discovery through creativity.</div>
+</div>
+   <div className="at">
+    <p>At Skillshare, we’ve seen again and again how the seemingly simple act of creating can be a force for growth,
+       change, and discovery in people’s lives. We want to inspire and multiply 
+      the kind of creative exploration that furthers expression, learning and application.</p>
+      <p>
+      Skillshare is an online learning community with thousands of classes for creative and curious people,
+       on topics including illustration, design, photography, video, freelancing, and more. On Skillshare, 
+      members come together to find inspiration and take the next step in their creative journey.
+      </p>
+   </div>
+
     <div className="about-container">
-      <h2 className="about-title">About Us</h2>
+      {/* <h2 className="about-title">About Us</h2>
       <p className="about-subtitle">
         Empowering learners with the best online education, making knowledge accessible, engaging, and career-focused.
-      </p>
+      </p> */}
       <div className="about-content">
         <div className="about-text">
           <h3>

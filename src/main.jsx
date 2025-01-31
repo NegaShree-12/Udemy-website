@@ -2,9 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
-
 import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
-import About from "./components/About/About.jsx";
 import CourseSlider from "./components/Swiper/Swiper.jsx";  
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 import Goals from "./components/Goals/Goals.jsx";
@@ -18,7 +16,8 @@ import AppFooter from "./components/AppFooter/AppFooter.jsx";
 import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 import ContactForm from "./components/contact/contact.jsx";
 import About from "./components/About/About.jsx";
-
+import Aboutcontent from "./components/About/Aboutcontent.jsx";
+import  TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 const MainPage = () => (
   <>
     <div
@@ -36,15 +35,16 @@ const MainPage = () => (
     <CourseSlider />
     <CommunityStats />
     <TrendingOnEdX />
-    <div className="center-container"></div>
+    <div className="center-container"> </div>
     <Goals />
     <Journey />
     <Subscription />
-    <About />
     <Review />
+   
     <Trends />
     <TrendingNow />
     <Story />
+    
     <AppFooter />
     <AppFooter1 />
   </>
@@ -56,7 +56,17 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/about" element={
+                   <>
+                   <TopNavbar />
+                     <About />
+                     <Aboutcontent />
+                     <AppFooter />
+                     <AppFooter1 />
+                   </>
+               } />
+
+
       </Routes>
     </Router>
   </StrictMode>

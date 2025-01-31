@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* About Section Container */
+.story {
+  
+    background-color:rgb(204, 232, 207);
+    display: flex;
+    flex-wrap: wrap; /* Makes it responsive */
+    
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+ 
+   
+
+}
+.story-container{
+    height: 110vh;
+    background-color:rgb(204, 232, 207);
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+
+/* About Text */
+
+.about-text2 {
+    flex: 1;
+    max-width: 500px;
+    background: white;
+    padding: 25px;
+    
+
+    box-shadow: -4px 4px 15px rgba(44, 43, 43, 3);
+    text-align: left;
+    position: relative;
+    margin-right: -60px; 
+    z-index: 2;
+    height: 500px;
+}
+
+
+.about-text2 h1 {
+    font-size: 1.6rem; 
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: rgb(12, 105, 12);
+}
+.about-text2 h2 {
+    font-size: 1.8rem; 
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: rgb(40, 58, 40);
+}
+
+.about-text2 p{
+    font-size: 17px;
+    font-weight: 500;
+   
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaders-btn {
+    background-color: rgb(19, 19, 19);
+    color: rgb(250, 243, 243);
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+}
+
+.leaders-btn:hover {
+    background-color: rgb(76, 72, 72);
+    color: white;
+}
+.about-image2 {
+    flex: 1;
+    max-width: 550px;
+
+    position: relative;
+    z-index: 1;
+    height: 700px;
+    margin-left: -50px;
+}
+
+.about-image2 img {
+    width: 100%;
+    height: 450px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Records Section */
+.record {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
+
+/* Count Styling */
+.count {
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+/* Record Text */
+.record p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
