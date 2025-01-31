@@ -1,9 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-
-=======
 import { useNavigate } from "react-router-dom";
->>>>>>> 40f9fc6601934bea33e685b73ca9006391fce7f6
 
 const TopNavbar = () => {
   const navigate = useNavigate();
@@ -83,16 +79,6 @@ const TopNavbar = () => {
     <nav style={styles.container}>
       <div style={styles.brand}onClick={navigateToHome}>Udemy</div>
       <ul style={styles.menu}>
-<<<<<<< HEAD
-        <li style={styles.menuItem}>Courses</li>
-        <li  style={styles.menuItem} >
-       
-            About
-           
-        </li>
-        <li style={styles.menuItem}>Contact</li>
-        <li style={styles.menuItem}>Login</li>
-=======
         
         <li style={styles.menuItem} onClick={navigateToAbout}>About</li>
         <li style={styles.menuItem} onClick={navigateToContact}>
@@ -100,7 +86,6 @@ const TopNavbar = () => {
         </li>
         <li style={styles.menuItem} >Courses</li>
         <li style={styles.menuItem}>Learnings</li>
->>>>>>> 40f9fc6601934bea33e685b73ca9006391fce7f6
         <button style={styles.button}>
         Login <span>→</span>
         </button>
