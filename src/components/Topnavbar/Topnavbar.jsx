@@ -1,16 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const TopNavbar = () => {
+  const navigate = useNavigate();
+
   const styles = {
     container: {
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "1rem 2rem",
+      padding: "1rem",
       backgroundColor: "#FAF9F6",
-      width: "95%",
-      border: "1px solid #e0e0e0",
+      width: "100%",
+      maxWidth: "1450px",
+      margin: "0 auto",
+      border: "1px solid #cccccc",
       borderRadius: "10px",
+      boxSizing: "border-box",
     },
     brand: {
       fontFamily: "'Playfair Display', serif",
@@ -21,10 +27,11 @@ const TopNavbar = () => {
     menu: {
       display: "flex",
       alignItems: "center",
-      gap: "2rem",
+      gap: "1rem",
       listStyle: "none",
       margin: 0,
       padding: 0,
+      flexWrap: "wrap",
     },
     menuItem: {
       fontFamily: "'Inter', sans-serif",
@@ -47,18 +54,40 @@ const TopNavbar = () => {
       alignItems: "center",
       gap: "0.5rem",
     },
+    link: {
+      color: "#313F30",
+      textDecoration: "none",
+    },
+    linkHover: {
+      color: "#FF6F61",
+    },
   };
+
+  const navigateToContact = () => {
+    navigate("/contact");
+  };
+
+  const navigateToHome = () => {
+    navigate("/");  
+  };
+ 
+  const navigateToAbout = () => {
+    navigate("/about");
+  }
 
   return (
     <nav style={styles.container}>
-      <div style={styles.brand}>Udemy</div>
+      <div style={styles.brand}onClick={navigateToHome}>Udemy</div>
       <ul style={styles.menu}>
-        <li style={styles.menuItem}>Courses</li>
-        <li style={styles.menuItem}>About</li>
-        <li style={styles.menuItem}>Contact</li>
-        <li style={styles.menuItem}>Login</li>
+        
+        <li style={styles.menuItem} onClick={navigateToAbout}>About</li>
+        <li style={styles.menuItem} onClick={navigateToContact}>
+          Contact
+        </li>
+        <li style={styles.menuItem} >Courses</li>
+        <li style={styles.menuItem}>Learnings</li>
         <button style={styles.button}>
-          Get Started <span>→</span>
+        Login <span>→</span>
         </button>
       </ul>
     </nav>

@@ -12,6 +12,7 @@ function Goals() {
       <div className="goal active">
         <h2>Hands-on training</h2>
         <p>Upskill effectively with AI-powered coding exercises, practice tests, and quizzes.</p>
+        <a href="#">Explore courses <FaArrowRight /></a>
       </div>
       <div className="goal">
         <h2>Certification prep</h2>

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import image1 from "../../assets/image1.webp";
-import image2 from "../../assets/image2.avif";
-import image3 from "../../assets/image3.jpg";
-import image4 from "../../assets/image4.jpg";
+import React, { useState, useEffect } from "react";
+import image1 from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3 .jpg";
+import image4 from "../../assets/imagee4.jpg";
 import "./Swiper.css";
 
 const CourseSlider = () => {
@@ -33,6 +33,12 @@ const CourseSlider = () => {
         "Learn SEO, social media marketing, and Google Ads strategies.",
     },
   ];
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setMainImageIndex((prevIndex) => (prevIndex + 1) % courses.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [courses.length]);
 
   return (
     <div className="image-wrapper">

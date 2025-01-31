@@ -23,7 +23,8 @@
   position: relative;
   height: 400px;
  padding-top: 50px;
-}
+} 
+
 
 .review-card {
   flex-shrink: 0;

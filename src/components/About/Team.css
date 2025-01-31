@@ -1,0 +1,60 @@
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .team-heading {
+    font-size: 28px;
+    color: #1c3d5a;
+    margin-bottom: 30px;
+  }
+  
+  /* Team Grid */
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Team Cards */
+  .team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .team-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Team Member Image */
+  .team-image {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  /* Team Member Name */
+  .team-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Team Member Title */
+  .team-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
