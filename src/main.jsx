@@ -19,13 +19,10 @@ import About from "./components/About/About.jsx";
 import Aboutcontent from "./components/About/Aboutcontent.jsx";
 import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
-<<<<<<< HEAD
 import ScrollTop from "./components/Scrolltop/ScrollTop.jsx";
 import AccountCreater from "./components/AccountCreater/Account.jsx";
-=======
 import Tutorial from "./components/Tutorial/Tutorial.jsx";
 import Login from "./components/Login/Login.jsx";
->>>>>>> 95043b186e2200fc2d0ba03a703f75958a727bc0
 
 const MainPage = () => (
   <>
@@ -66,7 +63,6 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<ContactForm />} />
-<<<<<<< HEAD
         <Route
           path="/about"
           element={
@@ -80,7 +76,6 @@ createRoot(document.getElementById("root")).render(
             </>
           }
         />
-=======
         <Route path="/about" element={
                    <>
                    <TopNavbar />
@@ -95,7 +90,6 @@ createRoot(document.getElementById("root")).render(
  <Route path="/tutorial" element={<Tutorial />} />
  <Route path="/login" element={<Login />} />
 
->>>>>>> 95043b186e2200fc2d0ba03a703f75958a727bc0
       </Routes>
     </Router>
   </StrictMode>
