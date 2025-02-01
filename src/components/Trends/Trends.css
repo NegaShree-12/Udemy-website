@@ -27,16 +27,22 @@
     font-size: 1rem;
     font-weight: bold;
     color: rgba(30, 109, 18);
-    
-    border: 1px solid rgba(30, 109, 18);
-    border-radius: 5px;
+    border: 1px solid rgb(5, 5, 236);
+    color: white;
+  background-color: rgb(5, 5, 236);
+    border-radius: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  display : flex;
+  align-items: center;
+  gap: 5px;
   }
   
   .trends-button:hover {
-    background-color: #d7d2e9;
+    background-color: #c4c0cd;
+    border-color: #c4c0cd;
   }
+  
   
   .trends-image img {
     max-width: 80%;

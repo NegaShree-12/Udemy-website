@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Story.css";
-import { FaChevronRight,FaChevronLeft, FaArrowRight } from "react-icons/fa";
+import { FaChevronRight, FaChevronLeft, FaArrowRight } from "react-icons/fa";
 
 const slides = [
   {
@@ -26,7 +26,7 @@ const slides = [
   {
     id: 3,
     logo: "toyato1.jpeg",
-    title: "Another Transformational Story Here",
+    title: "Toyota Tsusho Enhances its L&D Program to Improve Employee Outcomes",
     stats: [
       { value: "90%", description: "of learners gained new skills" },
       { value: "50%", description: "reduction in skill gaps across teams" },
@@ -55,7 +55,7 @@ const Story = () => {
         >
           <div className="slide-content">
             <img src={slide.logo} alt="Company Logo" className="logo" />
-            <h2 className="title">{slide.title}</h2>
+            <h2 className="title" id="title1">{slide.title}</h2>
             <div className="stats">
               {slide.stats.map((stat, idx) => (
                 <div key={idx} className="stat">
@@ -65,8 +65,8 @@ const Story = () => {
               ))}
             </div>
             <button className="read-more">
-      Read full story <FaArrowRight />
-    </button>
+              Read full story <FaArrowRight />
+            </button>
           </div>
           <div className="slide-image">
             <img src={slide.image} alt="Story visual" />
@@ -74,7 +74,10 @@ const Story = () => {
         </div>
       ))}
       <div className="navigation">
-        <button className="nav-btn" onClick={handlePrev}><FaChevronLeft /></button>
+        <div className="sl">
+        <button className="nav-btn" onClick={handlePrev}>
+          <FaChevronLeft />
+        </button>
         <div className="dots">
           {slides.map((_, idx) => (
             <span
@@ -84,7 +87,10 @@ const Story = () => {
             />
           ))}
         </div>
-        <button className="nav-btn" onClick={handleNext}> <FaChevronRight /></button>
+        <button className="nav-btn" onClick={handleNext}>
+          <FaChevronRight />
+        </button>
+      </div>
       </div>
     </div>
   );

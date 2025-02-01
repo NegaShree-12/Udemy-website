@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
-import CourseSlider from "./components/Swiper/Swiper.jsx";  
+import CourseSlider from "./components/Swiper/Swiper.jsx";
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 import Goals from "./components/Goals/Goals.jsx";
 import Journey from "./components/Journey/Journey.jsx";
@@ -17,10 +17,15 @@ import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 import ContactForm from "./components/contact/contact.jsx";
 import About from "./components/About/About.jsx";
 import Aboutcontent from "./components/About/Aboutcontent.jsx";
-import  TrendingOnEdX from "./components/edxcard/edxcard.jsx";
+import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
+<<<<<<< HEAD
+import ScrollTop from "./components/Scrolltop/ScrollTop.jsx";
+import AccountCreater from "./components/AccountCreater/Account.jsx";
+=======
 import Tutorial from "./components/Tutorial/Tutorial.jsx";
 import Login from "./components/Login/Login.jsx";
+>>>>>>> 95043b186e2200fc2d0ba03a703f75958a727bc0
 
 const MainPage = () => (
   <>
@@ -40,19 +45,18 @@ const MainPage = () => (
     <CourseSlider />
     <CommunityStats />
     <TrendingOnEdX />
-    <div className="center-container"> </div>
+    <div className="center-container"></div>
     <Goals />
     <Journey />
     <Subscription />
     <Review />
-   
     <Trends />
     <TrendingNow />
     <Story />
-    
     <AppFooter />
     <AppFooter1 />
-    
+    <ScrollTop />
+    <AccountCreater/>
   </>
 );
 
@@ -62,6 +66,21 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<ContactForm />} />
+<<<<<<< HEAD
+        <Route
+          path="/about"
+          element={
+            <>
+              <TopNavbar />
+              <About />
+              <Aboutcontent />
+              <Team />
+              <AppFooter />
+              <AppFooter1 />
+            </>
+          }
+        />
+=======
         <Route path="/about" element={
                    <>
                    <TopNavbar />
@@ -77,6 +96,7 @@ createRoot(document.getElementById("root")).render(
  <Route path="/login" element={<Login />} />
  <Route path="/signup" element={<AccountCreator />} />
 
+>>>>>>> 95043b186e2200fc2d0ba03a703f75958a727bc0
       </Routes>
     </Router>
   </StrictMode>

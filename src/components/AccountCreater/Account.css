@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  .account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a8d5ba; /* Mild green */
+  }
+  
+  .account-card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 900px;
+    height: 550px;
+  }
+  
+  /* Left Side: Welcome Back */
+  .account-welcome {
+    flex: 1;
+    padding: 60px;
+    background-color: #6aa47c; /* Darker green */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .account-welcome h2 {
+    margin-bottom: 20px;
+  }
+  
+  .account-welcome p {
+    margin: 20px 0;
+    color: #090808;
+  }
+  
+  .account-welcome button {
+    width: 100%;
+    padding: 14px;
+    background-color: white;
+    color: #6aa47c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: bold;
+  }
+  
+  .account-welcome button:hover {
+    background-color: #f0f2f5;
+  }
+  
+  .button-icon {
+    font-size: 14px;
+  }
+  
+  /* Right Side: Create Account */
+  .account-form {
+    flex: 1;
+    padding: 60px;
+    text-align: center;
+  }
+  
+  .account-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  /* Google "G" Icon */
+  .google-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .google-icon {
+    font-size: 20px; /* Bigger "G" */
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .google-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Input Fields */
+  .input-group {
+    position: relative;
+    margin: 20px 0;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #777;
+  }
+  
+  .account-form input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .account-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #008c5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .account-form button:hover {
+    background-color: #006946;
+  }
+  
