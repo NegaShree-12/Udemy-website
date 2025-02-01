@@ -20,7 +20,11 @@ import Aboutcontent from "./components/About/Aboutcontent.jsx";
 import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
 import ScrollTop from "./components/Scrolltop/ScrollTop.jsx";
+<<<<<<< HEAD
 import AccountCreater from "./components/AccountCreater/Account.jsx";
+=======
+import Account from "./components/AccountCreater/Account.jsx";
+>>>>>>> 53b7d64714947ed9d2cb302d184eb4c35b833c57
 import Tutorial from "./components/Tutorial/Tutorial.jsx";
 import Login from "./components/Login/Login.jsx";
 
@@ -53,7 +57,7 @@ const MainPage = () => (
     <AppFooter />
     <AppFooter1 />
     <ScrollTop />
-    <AccountCreater/>
+    
   </>
 );
 
@@ -89,6 +93,7 @@ createRoot(document.getElementById("root")).render(
                } />
  <Route path="/tutorial" element={<Tutorial />} />
  <Route path="/login" element={<Login />} />
+ <Route path="/signup" element={<Account />} />
 
       </Routes>
     </Router>

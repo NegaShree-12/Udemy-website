@@ -1,7 +1,7 @@
 import React from 'react';
 import './Account.css';
 import { FaUser, FaEnvelope, FaLock, FaArrowRight } from 'react-icons/fa';
-import { FcGoogle } from 'react-icons/fc'; // Import Google icon
+import { FcGoogle } from 'react-icons/fc'; 
 
 const Account = () => {
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import google from "../../assets/google.png";
 import exam from "../../assets/exam.png";
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -36,7 +37,7 @@ const Login = () => {
           </button>
 
           <p className="signup-text">
-            Are you new? <a href="#">Create an Account</a>
+            Are you new? <Link to="/signup">Create an Account</Link>  
           </p>
         </form>
       </div>
