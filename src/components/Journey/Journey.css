@@ -13,7 +13,7 @@
 
 .journey-subtitle {
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: bold;
 }
 
@@ -27,7 +27,7 @@
 .journey-steps {
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 200vh;
   position: relative;
   z-index: 2;
 }
@@ -41,31 +41,16 @@
   font-size: 2.5rem;
   color: rgba(30, 109, 18);
   margin-bottom: 1rem;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: aquamarine;
+  background-color: rgb(15, 250, 172);
   margin: 0 auto;
+  transition: all 0.3s ease-in-out; /* Ensure smooth animation */
 }
-
-.journey-box {
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 5px rgba(0, 0, 0, 0.2);
-  margin-top: 1rem;
-  height: 230px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
-
-
 
 .journey-step-title {
   font-size: 1.2rem;
@@ -76,7 +61,7 @@
 .journey-step-description {
   font-size: 0.9rem;
   color: #666;
-  margin-bottom: 1rem;
+  margin-bottom: 8px; /* Reduced from 20px */
 }
 
 .journey-step-link {
@@ -85,10 +70,43 @@
   font-weight: bold;
   font-size: 0.9rem;
   display: block;
+  margin-top: 4px; /* Added to control spacing */
 }
 
 .journey-step-link:hover {
   text-decoration: underline;
+}
+
+.journey-box {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  margin-top: 1rem;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.journey-box:hover {
+  background-color: darkgreen;
+  color: white;
+}
+
+/* Ensure all text inside turns white */
+.journey-box:hover .journey-step-title,
+.journey-box:hover .journey-step-description,
+.journey-box:hover .journey-step-link {
+  color: white;
+}
+
+
+.journey-box:hover .journey-icon {
+  transform: translateY(-5px) scale(1.1);
+  background-color: white;
+  color: rgb(19, 76, 10);
 }
 
 .journey-connector {
@@ -101,7 +119,8 @@
   z-index: 1;
   transform: translateY(-50%);
 }
-#content{
+
+#content {
   height: auto;
   flex-grow: 1;
   overflow: hidden;
