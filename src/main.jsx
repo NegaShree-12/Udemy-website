@@ -75,6 +75,7 @@ createRoot(document.getElementById("root")).render(
                } />
  <Route path="/tutorial" element={<Tutorial />} />
  <Route path="/login" element={<Login />} />
+ <Route path="/signup" element={<AccountCreator />} />
 
       </Routes>
     </Router>
