@@ -53,7 +53,7 @@ const MainPage = () => (
     <AppFooter />
     <AppFooter1 />
     <ScrollTop />
-    <AccountCreater/>
+    
   </>
 );
 

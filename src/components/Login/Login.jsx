@@ -37,7 +37,7 @@ const Login = () => {
           </button>
 
           <p className="signup-text">
-            Are you new? <Link to="/signup">Create an Account</Link>
+            Are you new? <Link to="/signup">Create an Account</Link>  
           </p>
         </form>
       </div>
