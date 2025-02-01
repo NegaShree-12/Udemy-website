@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
 import TopNavbar from "./components/Topnavbar/Topnavbar.jsx";
-import CourseSlider from "./components/Swiper/Swiper.jsx";  
+import CourseSlider from "./components/Swiper/Swiper.jsx";
 import CommunityStats from "./components/Communitystatus/communitystatus.jsx";
 import Goals from "./components/Goals/Goals.jsx";
 import Journey from "./components/Journey/Journey.jsx";
@@ -17,8 +17,11 @@ import AppFooter1 from "./components/AppFooter1/AppFooter1.jsx";
 import ContactForm from "./components/contact/contact.jsx";
 import About from "./components/About/About.jsx";
 import Aboutcontent from "./components/About/Aboutcontent.jsx";
-import  TrendingOnEdX from "./components/edxcard/edxcard.jsx";
+import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
+import ScrollTop from "./components/Scrolltop/ScrollTop.jsx";
+import AccountCreater from "./components/AccountCreater/Account.jsx";
+
 const MainPage = () => (
   <>
     <div
@@ -36,19 +39,18 @@ const MainPage = () => (
     <CourseSlider />
     <CommunityStats />
     <TrendingOnEdX />
-    <div className="center-container"> </div>
+    <div className="center-container"></div>
     <Goals />
     <Journey />
     <Subscription />
     <Review />
-   
     <Trends />
     <TrendingNow />
     <Story />
-    
     <AppFooter />
     <AppFooter1 />
-    
+    <ScrollTop />
+    <AccountCreater/>
   </>
 );
 
@@ -58,19 +60,19 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<ContactForm />} />
-        <Route path="/about" element={
-                   <>
-                   <TopNavbar />
-                     <About />
-                     <Aboutcontent />
-                     <Team/>
-                     <AppFooter />
-                     <AppFooter1 />
-                     
-                   </>
-               } />
-
-
+        <Route
+          path="/about"
+          element={
+            <>
+              <TopNavbar />
+              <About />
+              <Aboutcontent />
+              <Team />
+              <AppFooter />
+              <AppFooter1 />
+            </>
+          }
+        />
       </Routes>
     </Router>
   </StrictMode>
