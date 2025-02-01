@@ -74,6 +74,14 @@ const TopNavbar = () => {
   const navigateToAbout = () => {
     navigate("/about");
   }
+  const navigateToTutorial = () => {
+    navigate("/tutorial");
+  }
+  const navigateToLogin = () => {
+    navigate("/login");
+  }
+
+
 
   return (
     <nav style={styles.container}>
@@ -84,11 +92,11 @@ const TopNavbar = () => {
         <li style={styles.menuItem} onClick={navigateToContact}>
           Contact
         </li>
-        <li style={styles.menuItem} >Courses</li>
+        <li style={styles.menuItem} onClick={navigateToTutorial} >Courses</li>
         <li style={styles.menuItem}>Learnings</li>
-        <button style={styles.button}>
-        Login <span>→</span>
-        </button>
+        <button style={styles.button} onClick={navigateToLogin} >
+      Login <span style={styles.span}>→</span>
+    </button>
       </ul>
     </nav>
   );

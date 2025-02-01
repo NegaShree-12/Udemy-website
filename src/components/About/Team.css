@@ -2,7 +2,8 @@
 .team-section {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color:rgb(204, 232, 207);
+    padding: 40px;
   }
   
   /* Title styling */
@@ -38,6 +39,7 @@
     transform: translateY(-5px);
   }
   
+<<<<<<< HEAD
   /* Image styling */
   .team-image {
     width: 150px; /* Fixed size */
@@ -46,6 +48,10 @@
     border-radius: 50%;
     margin-bottom: 15px;
   }
+=======
+  
+
+>>>>>>> 2ae396a (added sign in  page)
   
   /* Text alignment */
   .team-info {

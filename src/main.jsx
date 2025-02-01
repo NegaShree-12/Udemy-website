@@ -19,11 +19,15 @@ import About from "./components/About/About.jsx";
 import Aboutcontent from "./components/About/Aboutcontent.jsx";
 import  TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
+import Tutorial from "./components/Tutorial/Tutorial.jsx";
+import Login from "./components/Login/Login.jsx";
+
 const MainPage = () => (
   <>
     <div
       style={{
         display: "flex",
+
         alignItems: "center",
         justifyContent: "center",
         height: "100px",
@@ -69,7 +73,8 @@ createRoot(document.getElementById("root")).render(
                      
                    </>
                } />
-
+ <Route path="/tutorial" element={<Tutorial />} />
+ <Route path="/login" element={<Login />} />
 
       </Routes>
     </Router>

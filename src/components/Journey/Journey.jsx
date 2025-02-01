@@ -6,25 +6,30 @@ const Journey = () => {
   const steps = [
     {
       icon: <FaCertificate />,
-      title: "28 years of experienced",
-      description: "Udemy is backed by 28 years of experienced...",
+      title: "28 Years of Experience",
+      description:
+        "Udemy is backed by 28 years of experience in delivering high-quality education and training solutions.",
     },
     {
       icon: <FaClipboardList />,
-      title: "Organization aimed",
-      description: "An organization aimed to curate trainings which cater...",
+      title: "Organization Aimed at Excellence",
+      description:
+        "We are an organization dedicated to curating training programs that cater to the evolving needs of industries worldwide.",
     },
     {
       icon: <FaSeedling />,
-      title: "Eco system",
-      description: "Over the next 7 years we aim to curate an eco system...",
+      title: "Building a Thriving Ecosystem",
+      description:
+        "Over the next 7 years, we aim to establish a comprehensive ecosystem that nurtures learning, collaboration, and career growth.",
     },
     {
       icon: <FaComments />,
-      title: "Good communication",
-      description: "At Udemy  we believe that good communication helps...",
+      title: "Emphasizing Effective Communication",
+      description:
+        "At Udemy, we believe that effective communication is a crucial skill in today's professional landscape. ",
     },
   ];
+  
 
   return (
     <div className="journey">
