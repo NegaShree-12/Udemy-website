@@ -1,103 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Menu, Close } from "@mui/icons-material";
+import styles from "./TopNavbar.module.css";
 
 const TopNavbar = () => {
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const styles = {
-    container: {
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-      padding: "1rem",
-      backgroundColor: "#FAF9F6",
-      width: "100%",
-      maxWidth: "1450px",
-      margin: "0 auto",
-      border: "1px solid #cccccc",
-      borderRadius: "10px",
-      boxSizing: "border-box",
-    },
-    brand: {
-      fontFamily: "'Playfair Display', serif",
-      fontSize: "1.5rem",
-      color: "#313F30",
-      fontWeight: "bold",
-    },
-    menu: {
-      display: "flex",
-      alignItems: "center",
-      gap: "1rem",
-      listStyle: "none",
-      margin: 0,
-      padding: 0,
-      flexWrap: "wrap",
-    },
-    menuItem: {
-      fontFamily: "'Inter', sans-serif",
-      fontSize: "0.9rem",
-      color: "#313F30",
-      textTransform: "uppercase",
-      fontWeight: "500",
-      cursor: "pointer",
-    },
-    button: {
-      padding: "0.5rem 1rem",
-      fontSize: "0.9rem",
-      fontFamily: "'Inter', sans-serif",
-      color: "#313F30",
-      border: "1px solid #313F30",
-      borderRadius: "25px",
-      backgroundColor: "transparent",
-      cursor: "pointer",
-      display: "flex",
-      alignItems: "center",
-      gap: "0.5rem",
-    },
-    link: {
-      color: "#313F30",
-      textDecoration: "none",
-    },
-    linkHover: {
-      color: "#FF6F61",
-    },
+  const navigateTo = (path) => {
+    navigate(path);
+    setMenuOpen(false); // Close menu after clicking a link
   };
-
-  const navigateToContact = () => {
-    navigate("/contact");
-  };
-
-  const navigateToHome = () => {
-    navigate("/");  
-  };
- 
-  const navigateToAbout = () => {
-    navigate("/about");
-  }
-  const navigateToTutorial = () => {
-    navigate("/tutorial");
-  }
-  const navigateToLogin = () => {
-    navigate("/login");
-  }
-
-
 
   return (
-    <nav style={styles.container}>
-      <div style={styles.brand}onClick={navigateToHome}>Udemy</div>
-      <ul style={styles.menu}>
-        
-        <li style={styles.menuItem} onClick={navigateToAbout}>About</li>
-        <li style={styles.menuItem} onClick={navigateToContact}>
+    <nav className={styles.container}>
+      <div className={styles.brand} onClick={() => navigateTo("/")}>
+        Udemy
+      </div>
+
+      <ul className={`${styles.menu} ${menuOpen ? styles.hidden : ""}`}>
+        <li className={styles.menuItem} onClick={() => navigateTo("/about")}>
+          About
+        </li>
+        <li className={styles.menuItem} onClick={() => navigateTo("/contact")}>
           Contact
         </li>
-        <li style={styles.menuItem} onClick={navigateToTutorial} >Courses</li>
-        <li style={styles.menuItem}>Learnings</li>
-        <button style={styles.button} onClick={navigateToLogin} >
-      Login <span style={styles.span}>→</span>
-    </button>
+        <li className={styles.menuItem} onClick={() => navigateTo("/tutorial")}>
+          Courses
+        </li>
+        <li className={styles.menuItem}>Learnings</li>
+        <button className={styles.button} onClick={() => navigateTo("/login")}>
+          Login <span className={styles.arrow}>→</span>
+        </button>
       </ul>
+
+      {/* Mobile Menu Icon */}
+      <div className={styles.menuIcon} onClick={() => setMenuOpen(true)}>
+        <Menu />
+      </div>
+
+      {/* Fullscreen Mobile Menu */}
+      {menuOpen && (
+        <div className={styles.mobileMenu}>
+          <div className={styles.closeIcon} onClick={() => setMenuOpen(false)}>
+            <Close />
+          </div>
+          <ul className={styles.mobileMenuList}>
+            <li onClick={() => navigateTo("/about")}>About</li>
+            <li onClick={() => navigateTo("/contact")}>Contact</li>
+            <li onClick={() => navigateTo("/tutorial")}>Courses</li>
+            <li>Learnings</li>
+            <button onClick={() => navigateTo("/login")}>Login</button>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };

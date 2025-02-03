@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #faf9f6;
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.brand {
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
+  color: #313f30;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menuItem {
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  color: #313f30;
+  text-transform: uppercase;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+  color: #313f30;
+  border: 1px solid #313f30;
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Mobile Menu Icon */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+
+/* Mobile Fullscreen Menu */
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.mobileMenuList {
+  list-style: none;
+  text-align: center;
+}
+
+.mobileMenuList li {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* Close Icon */
+.closeIcon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menuIcon {
+    display: block;
+  }
+}
