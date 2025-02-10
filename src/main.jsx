@@ -19,9 +19,10 @@ import About from "./components/About/About.jsx";
 import Aboutcontent from "./components/About/Aboutcontent.jsx";
 import TrendingOnEdX from "./components/edxcard/edxcard.jsx";
 import Team from "./components/About/Team.jsx";
+import ScrollTop from "./components/Scrolltop/ScrollTop.jsx";
+import Account from "./components/AccountCreater/Account.jsx";
 import Tutorial from "./components/Tutorial/Tutorial.jsx";
 import Login from "./components/Login/Login.jsx";
-import Coursedetail1 from "./components/Coursedetail1/coursedetail1.jsx";
 
 const MainPage = () => (
   <>
@@ -41,18 +42,17 @@ const MainPage = () => (
     <CourseSlider />
     <CommunityStats />
     <TrendingOnEdX />
-    <div className="center-container"> </div>
+    <div className="center-container"></div>
     <Goals />
     <Journey />
     <Subscription />
     <Review />
-
     <Trends />
     <TrendingNow />
     <Story />
-
     <AppFooter />
     <AppFooter1 />
+    <ScrollTop />
   </>
 );
 
@@ -77,7 +77,7 @@ createRoot(document.getElementById("root")).render(
         />
         <Route path="/tutorial" element={<Tutorial />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/course/:courseId" element={<Coursedetail1 />} />
+        <Route path="/signup" element={<Account />} />
       </Routes>
     </Router>
   </StrictMode>

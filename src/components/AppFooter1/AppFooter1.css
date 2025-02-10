@@ -5,8 +5,7 @@
   padding: 2rem 1rem;
   font-family: Arial, sans-serif;
   overflow-x: hidden;
-
-  
+  position: relative;
 }
 
 .footer-container {
@@ -74,4 +73,25 @@
 
 .footer-language span {
   font-size: 1.25rem;
+}
+
+/* Up Arrow Styles */
+.up-arrow {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 80%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it's above other elements */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.up-arrow:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
 }

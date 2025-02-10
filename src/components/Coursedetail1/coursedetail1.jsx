@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { useParams } from "react-router-dom";
-import { FaFilePdf, FaVideo, FaBook, FaCode } from "react-icons/fa"; // Import icons from react-icons
+import { FaFilePdf, FaVideo, FaBook, FaCode } from "react-icons/fa";
 import "./CourseDetail.css";
 
 const Coursedetail1 = () => {

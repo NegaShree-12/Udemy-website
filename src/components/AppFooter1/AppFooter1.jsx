@@ -1,9 +1,21 @@
 import React from "react";
-import "./AppFooter1.css"; // Updated to match your CSS file name
+import "./AppFooter1.css";
 
 const AppFooter1 = () => {
+  // Function to scroll to the top of the page
+  const scrollToTop = () => {
+    console.log("Scroll to top clicked!"); // Debugging: Check if the function is called
+    window.scrollTo({
+      bottom: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
   return (
     <footer className="app-footer">
+      {/* Up Arrow Button */}
+      
+
       <div className="footer-container">
         <div className="footer-section">
           <h4>About</h4>

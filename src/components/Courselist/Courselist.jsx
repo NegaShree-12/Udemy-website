@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Courselist.css";
 import Chatgpt from "../../assets/chatgpt.png";
 import Ai from "../../assets/Ai.png";

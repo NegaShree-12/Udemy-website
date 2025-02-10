@@ -1,4 +1,3 @@
-import React from "react";
 import punctuation from "../../assets/punctuation.svg";
 
 const CommunityStats = () => {
@@ -84,7 +83,7 @@ const Stat = ({ number, label }) => (
         fontSize: "48px",
         fontWeight: "700",
         color: "#7B4DAD",
-      }}
+      }} 
     >
       {number}
     </p>

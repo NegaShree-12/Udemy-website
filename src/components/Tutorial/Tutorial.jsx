@@ -1,4 +1,3 @@
-import React from "react";
 import "./Tutorial.css";
 import ui from "../../assets/ui.jpeg";
 import c from "../../assets/c.jpeg";

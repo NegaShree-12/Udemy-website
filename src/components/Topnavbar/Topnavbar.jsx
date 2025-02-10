@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, Close } from "@mui/icons-material";
 import styles from "./TopNavbar.module.css";
